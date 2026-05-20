@@ -1,7 +1,7 @@
 import Header from './components/Header'
 import Footer from './components/Footer'
 import './index.css'
-import { BrowserRouter, Route, Routes } from 'react-router';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router';
 import Experience from './pages/Experience';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
@@ -15,6 +15,7 @@ function App() {
         <Header />
         <main className='flex-1'>
           <Routes>
+            <Route path='/' element={<Navigate to="/home" replace />}/>
             <Route path='/home' element={<Home />} />
             <Route path='/experience' element={<Experience />} />
             <Route path='/contact' element={<Contact />} />
