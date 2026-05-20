@@ -29,7 +29,7 @@ function Header() {
                 {/* Right */}
                 {/* Desktop Menu */}
                 <Button className="hidden md:block px-4 py-2 hover:scale-105 cursor-pointer"><a
-                    href="./public/full_stack_resume.pdf"
+                    href="/full_stack_resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
@@ -65,7 +65,7 @@ function Header() {
                             </div>
                             <Button className="cursor-pointer mb-8 mx-8">
                                 <a
-                                    href="./public/full_stack_resume.pdf"
+                                    href="/full_stack_resume.pdf"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
