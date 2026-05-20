@@ -1,4 +1,6 @@
-function Timeline({ experiences }) {
+import type { Experience } from "@/data/tech";
+
+function Timeline({ experiences } : {experiences: Experience[]}) {
     return (
         <section>
             <div className="mt-20 relative">

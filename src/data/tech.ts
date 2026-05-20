@@ -2,6 +2,14 @@ import { Cloud, Server, TerminalSquare } from "lucide-react";
 import energyImg from "../assets/energy.png"
 import expenseImg from "../assets/expense.png"
 
+export interface Experience {
+  period:string;
+  title: string;
+  company: string;
+  description: string;
+  active: boolean
+}
+
 export const technologies = [
     {name: "Frontend Engineering", desc: "Building performant, accessible user interfaces with modern web standards.", tags: ["React.js", "Next.js", "TypeScript", "JavaScript (ES6+)", "Tailwind CSS", "Redux Toolkit", "Zustand", "Context API"], icon: TerminalSquare},
     {name: "Backend Systems", desc: "Designing robust APIs and scalable microservice architectures.", tags: ["Core Java", "Spring Boot", "Spring MVC", "Spring Data JPA", "Spring Security", "Spring AI", "REST APIs", "JWT",
